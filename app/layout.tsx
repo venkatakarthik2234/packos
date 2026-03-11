@@ -1,16 +1,18 @@
 export const metadata = {
   title: "First Ride Skating Academy",
-  description: "Skating classes and training"
-}
+  description: "Professional skating training"
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html>
-      <body>{children}</body>
+    <html lang="en">
+      <body style={{fontFamily:"Arial"}}>
+        {children}
+      </body>
     </html>
-  )
+  );
 }
